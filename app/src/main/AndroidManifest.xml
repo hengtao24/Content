@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sht.content">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="com.sht.content.ContentApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/DayTheme"
+        android:hardwareAccelerated="true">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.About.AboutActivity" />
+        <activity android:name=".ui.daily.DailyDetailsActivity"/>
+        <activity android:name=".ui.daily.DailyDetails"/>
+        <activity android:name=".ui.science.ScienceDetailsActivity"/>
+        <activity android:name=".ui.reading.ReadingDetailsActivity"/>
+
+
+    </application>
+
+</manifest>

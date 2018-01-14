@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                tools:context=".ui.MainActivity"
+                android:background="?attr/background">
+
+    <include layout="@layout/widget_appbar"/>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+    <LinearLayout
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_behavior="com.sht.content.support.Behavior.BottomViewBehavior">
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_daily"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/bottom_tab_menu_zhihu"
+                android:text="@string/tab_menu_alert"/>
+
+            <RadioButton
+                android:id="@+id/rb_reading"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_douban"
+                android:text="@string/tab_menu_profile"/>
+
+            <RadioButton
+                android:id="@+id/rb_science"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_guoke"
+                android:text="@string/tab_menu_pay"/>
+
+            <RadioButton
+                android:id="@+id/rb_news"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_news"
+                android:text="@string/tab_menu_setting"/>
+            <RadioButton
+                android:id="@+id/rb_sports"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/tab_menu_sports"
+                android:text="@string/tab_menu_sports"/>
+        </RadioGroup>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

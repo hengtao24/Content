@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Content</string>
+    <string name="tab_menu_alert">知乎日报</string>
+    <string name="tab_menu_profile">豆瓣</string>
+    <string name="tab_menu_pay">果壳</string>
+    <string name="tab_menu_setting">新闻</string>
+    <string name="tab_menu_sports">体育</string>
+
+    <string name="author_email">hengtao24@gmail.com</string>
+    <string name="author_name">SHTT</string>
+
+    <string name="daily">日报</string>
+    <string name="reading">豆瓣</string>
+    <string name="science">果壳</string>
+    <string name="news">新闻</string>
+    <string name="sports">运动</string>
+
+    <!-- net model-->
+    <string name="Text_Net_Exception">网络异常</string>
+    <string name="text_refresh_success">刷新成功</string>
+
+    <!--adapter -->
+    <string name="id_url">url</string>
+    <string name="loading_more">正在加载…</string>
+
+    <!--menu-->
+    <string name="collection">收藏</string>
+    <string name="share">分享</string>
+    <string name="notify_remove_from_collection">成功从收藏移除</string>
+    <string name="notify_add_to_collection">成功添加到收藏</string>
+
+    <!--details-->
+    <string name="text_share_from">分享自</string>
+    <string name="hint_share_to">分享到</string>
+    <string name="no_news">没有内容</string>
+
+    <!--item-->
+    <string name="text_collection">收 藏</string>
+    <string name="text_hot">热度</string>
+</resources>
